@@ -8,6 +8,10 @@ jobs:
         run: echo "Hello there from Github actions."
       - name: Print another greeting
         run: echo "Hello again from Github actions."
-      - name: check os-release
-        run: echo $(cat /etc/os-release)
+      - name: check os-release and run couple of commands
+        run: |
+          echo $(cat /etc/os-release)
+          echo $(ip address show)
+          
+        
       
