@@ -12,6 +12,7 @@ jobs:
         run: |
           echo $(cat /etc/os-release)
           echo $(ip address show)
+          echo $(curl icanhazip.com)
           
         
       
